@@ -8,7 +8,7 @@ function Header() {
                 <div className="logo">
                     <img src={logo} alt="" />
                     <p>React</p>
-                    </div>
+                </div>
                 <div className="links">
                     <a href="#">Docs</a>
                     <a href="#">Tutorial</a>
