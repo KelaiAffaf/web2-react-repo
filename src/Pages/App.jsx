@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Main />
       <Section />
-      <Section2 />
+      {/* <Section2 /> */}
       <Footer />
     </div>
   )
