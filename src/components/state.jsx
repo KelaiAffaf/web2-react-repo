@@ -8,8 +8,15 @@ class Counter extends Component {
         this.state = {
             count: 0,
             price: 0,
-            name: ""
+            name: "",
+            isLoggedIn: false,
+            age:0
         }
+    }
+    handlClick = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
     }
 
     render() {
@@ -17,7 +24,7 @@ class Counter extends Component {
             <div>
                 <h1> {this.state.count} </h1>
                 {/* setState is used to modify the state value */}
-                <button onClick={() => { this.setState({ count: this.state.count + 1 }) }} >click</button>
+                <button onClick={this.handlClick} >click</button>
             </div>
         );
     }
@@ -44,6 +51,7 @@ export default Counter ;
  }
   
  export default Count ;
+
 // State in functional component :
 
 // we manage the state inside the function using Hooks :
@@ -61,7 +69,7 @@ import React from 'react'
 import useState from 'react'
 function Counter() {
 
-    const [count, setCount] = useState(0);
+    const [count, setCount] = (useState0);
     const [name, setName] = useState("");
     const [show , setShow] = useState(false);
 

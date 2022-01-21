@@ -1,0 +1,6 @@
+.container{
+    text-align: center;
+}
+.child-container{
+    border: 2px solid red;
+}

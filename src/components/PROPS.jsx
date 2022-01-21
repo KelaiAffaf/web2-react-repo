@@ -7,7 +7,7 @@ class ParentComponent extends Component {
     render() {
         return (
             <>
-                <ChildComponent name="First Child" age={23} />
+                <ChildComponent name="First Child" Age={23} />
                 <ChildComponent name="Second Child" age={11} />
                 <ChildComponent />
                 <ChildComponent />
@@ -18,11 +18,11 @@ class ParentComponent extends Component {
 }
 export default ParentComponent;
 
-const ChildComponent = ({age,name}) => {
+const ChildComponent = ({Age,name}) => {
     // destructuring 
     return (
         <div>
-            <p>{age}</p>;
+            <p>{Age}</p>;
             <p>{name}</p>
 
         </div>
