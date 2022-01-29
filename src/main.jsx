@@ -8,8 +8,9 @@ import Chat from './Exo-2'
 import Effect from './Hooks/Effect'
 import FetchData from './Hooks/FetchData'
 import AxiosData from './Hooks/AxiosData'
+import AppState from './AppState'
 ReactDOM.render(
     <React.StrictMode>
-        <AxiosData />
+        <AppState />
     </React.StrictMode>
     , document.getElementById('root'))

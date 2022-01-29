@@ -25,6 +25,5 @@ ChildComponent.defaultProps = {
 ChildComponent.propTypes = {
     name: PropTypes.string.isRequired,
     Age: PropTypes.number.isRequired,
-   
 }
 export default ChildComponent;
