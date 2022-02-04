@@ -13,7 +13,7 @@ function ChatFunction({ SendMsg, chatMessage }) {
 
     const handlSubmit = (e) => {
         e.preventDefault();
-     // to prevent the default behaviour of the form
+        // to prevent the default behaviour of the form
         SendMsg(msg); // we're sending a callback function to the parent component
     }
     return <div>
@@ -24,11 +24,13 @@ function ChatFunction({ SendMsg, chatMessage }) {
                 onChange={handleValue}
                 value={msg}
             />
-            <input type="submit"
-                value="Send" />
-            <h2> {chatMessage} </h2>
+            <input 
+                type="submit"
+                value="Send"
+            />
 
         </form>
+        <h2> {chatMessage} </h2>
     </div>;
 }
 

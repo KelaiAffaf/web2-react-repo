@@ -17,10 +17,20 @@ const titre = styled.p`
 
 
 function Card(props) {
-   
+
     return (
         <Container>
-            <h3 style={{fontSize:"24px" , color:"blue"}} >{props.title}</h3>
+            <div style={{
+                fontSize: "24px",
+                color: "#292b2c",
+                backgroundColor: "#fff",
+                padding: "10px",
+                borderRadius: "5px",
+                border: "1px solid #ccc",
+                boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)"
+            }} >
+                {props.title}
+            </div>
             <p style={paragrapheStyle}>{props.para1} </p>
             <p>{props.para2} </p>
         </Container>
