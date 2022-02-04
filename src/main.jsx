@@ -1,17 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import {store} from './Redux/Store'
 import './index.css'
-// import App from './Exo-1'
-// import Counter from './Course/Counter'
-// import Parent from './Props-course/ParentComponent'
-// import Chat from './Exo-2'
-// import Effect from './Hooks/Effect'
-// import FetchData from './Hooks/FetchData'
-// import AxiosData from './Hooks/AxiosData'
-// import AppState from './AppState'
-import Counter from './Hooks/Reducers/Counter'
+
+import Counter from './Redux/CounterUi'
+import TodoApp from './Redux/Todo/TodoApp'
 ReactDOM.render(
     <React.StrictMode>
-        <Counter />
+        <Provider store={store}>
+            <TodoApp />
+        </Provider>
     </React.StrictMode>
     , document.getElementById('root'))
