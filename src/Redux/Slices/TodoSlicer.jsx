@@ -12,7 +12,7 @@ export const todoSlice = createSlice({
             state.value += 1;
         },
         addTodo: (state, action) => {
-            console.log(action);
+            console.log(action); 
             state.todos.push(action.payload);
         },
         removeTodo: (state, action) => {
