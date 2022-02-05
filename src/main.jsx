@@ -8,10 +8,11 @@ import Counter from './Redux/CounterUi'
 import TodoApp from './Redux/Todo/TodoApp'
 import Banque from './Banque/Banque'
 import CofeeShop from './Cafee/CofeeShop'
+import Ecommerce from './Commerce/Ecommerce'
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <CofeeShop />
+            <Ecommerce />
         </Provider>
     </React.StrictMode>
     , document.getElementById('root'))
