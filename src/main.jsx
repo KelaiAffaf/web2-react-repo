@@ -6,10 +6,11 @@ import './index.css'
 
 import Counter from './Redux/CounterUi'
 import TodoApp from './Redux/Todo/TodoApp'
+import Banque from './Exo/Banque'
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <TodoApp />
+            <Banque />
         </Provider>
     </React.StrictMode>
     , document.getElementById('root'))
